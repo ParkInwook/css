@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Grid Layout</title>
+    <style>
+        /* 전체 페이지 설정 */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 카드 컨테이너 */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap; /* 줄바꿈 허용 */
+            justify-content: center; /* 카드 정렬 */
+            gap: 40px; /* 카드 간격 */
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        /* 개별 카드 */
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        /* 카드 이미지 */
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* 카드 내용 */
+        .card .content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card .content h3 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .card .content p {
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* 버튼 */
+        .card .action {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+
+        .card .action button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .card .action button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- 첫 번째 카드 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" alt="Card Image">
+            <div class="content">
+                <h3>Card 1</h3>
+                <p>This is the first card's description.</p>
+            </div>
+            <div class="action">
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <!-- 두 번째 카드 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" alt="Card Image">
+            <div class="content">
+                <h3>Card 2</h3>
+                <p>This is the second card's description.</p>
+            </div>
+            <div class="action">
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <!-- 세 번째 카드 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" alt="Card Image">
+            <div class="content">
+                <h3>Card 3</h3>
+                <p>This is the third card's description.</p>
+            </div>
+            <div class="action">
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <!-- 네 번째 카드 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/250x150" alt="Card Image">
+            <div class="content">
+                <h3>Card 4</h3>
+                <p>This is the fourth card's description.</p>
+            </div>
+            <div class="action">
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
